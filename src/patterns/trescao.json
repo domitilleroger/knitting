@@ -3,106 +3,372 @@
   "name": "Trescao",
   "author": "Along with Anna",
   "sizes": [80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 150, 158],
-  "instructions": [
+  "part": [
     {
-      "type": "note",
-      "content": "Note : attention de bien lire le patron en entier et de surligner votre taille pour repérer quelles sont les parties à suivre, surtout pour les augmentations raglan."
-    },
-    {
-      "type": "default",
-      "content": "Avec les plus petites aiguilles, monter /// en utilisant la technique du montage continental des mailles. Joindre en rond et pM pour signaler le début du rg.",
-      "values": [
+      "title": "Commencement : point mousse",
+      "needlesSize": "3.5",
+      "instructions": [
         {
-          "key": "///",
-          "values": [
-            [86, 90, 100, 104, 110, 108, 114, 114, 114, 116, 120, 120, 120, 120, 120]
-          ],
-          "unity": "m"
+          "type": "note",
+          "content": "Note : attention de bien lire le patron en entier et de surligner votre taille pour repérer quelles sont les parties à suivre, surtout pour les augmentations raglan."
+        },
+        {
+          "type": "default",
+          "content": "Avec les plus petites aiguilles, monter ///m en utilisant la technique du montage continental des mailles. Joindre en rond et pM pour signaler le début du rg.",
+          "values": [86, 90, 100, 104, 110, 108, 114, 114, 114, 116, 120, 120, 120, 120, 120]
+        },
+        {
+          "type": "default",
+          "content": "Rg 1, 3 & 5 : tric. les m à l'env. Rg 2 & 4 : tric. les m à l'end."
         }
       ]
     },
     {
-      "type": "default",
-      "content": "Rg 1, 3 & 5 : tric. les m à l'env. Rg 2 & 4 : tric. les m à l'end."
+      "title": "Rangs raccourcis à l'allemande",
+      "needlesSize": "4",
+      "instructions": [
+        {
+          "type": "changeNeedles",
+          "content": "Changer pour les plus grandes aiguilles."
+        },
+        {
+          "type": "default",
+          "content": "Rg de positionnement (end.) : tric. 1 rg à l’end. en plaçant les marqueurs de cette façon : ///m end. pour le dos, pM, 2m end. pour le raglan, pM, ",
+          "values": [16, 17, 18, 20, 22, 22, 22, 22, 23, 24, 25, 25, 25, 25, 25]
+        },
+        {
+          "type": "default",
+          "content": "///m end. pour la manche droite, pM, 2m end. pour le raglan, pM, ",
+          "values": [8, 8, 10, 8, 8, 6, 8, 8, 6, 6, 6, 6, 6, 6, 6]
+        },
+        {
+          "type": "inline",
+          "content": "///m end. pour le devant, pM, 2m end. pour le raglan, pM, ",
+          "values": [31, 33, 36, 40, 43, 44, 45, 45, 47, 48, 50, 50, 50, 50, 50]
+        },
+        {
+          "type": "inline",
+          "content": "///m end. pour la manche gauche, pM, 2m end. pour le raglan, pM, pM, ",
+          "values": [8, 8, 10, 8, 8, 6, 8, 8, 6, 6, 6, 6, 6, 6, 6]
+        },
+        {
+          "type": "inline",
+          "content": "///m end. pour le dos.",
+          "values": [15, 16, 18, 20, 21, 22, 23, 23, 24, 24, 25, 25, 25, 25, 25]
+        },
+        {
+          "type": "note",
+          "content": "Note : le MDR se trouve au milieu du dos. Rangs raccourcis (german short rows) et augmentations raglan"
+        },
+        {
+          "type": "default",
+          "content": "Pour cette partie, vous allez tricoter en aller-retour pour creuser l'encolure et faire en sorte que le dos soit plus haut que le devant. Glisser les M quand nécessaire."
+        },
+        {
+          "type": "default",
+          "content": "Rg 1 (end.) : tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté, tric. à l’end. les mailles de la manche droite, 1 jeté, gM, 2m end., gM, 1 jeté, 2 m end., tourner le travail, GSR."
+        },
+        {
+          "type": "default",
+          "content": "Rg 2 (env.) : tric à l’envers jusqu’au MDR, tric. à l'env. jusqu'au prochain M, 1 jeté, gM, 2m env., gM, 1 jeté, tric. à l’env. les mailles de la manche gauche, 1 jeté, gM, 2m env., gM, 1 jeté, 2m env., tourner le travail, GSR."
+        },
+        {
+          "type": "default",
+          "content": "Rg 3 (end.) : tric. à l’end. jusqu’au MDR."
+        },
+        {
+          "type": "default",
+          "content": "Faire ces 3 rgs 4 fois au total en faisant un GSR ///m après le GSR précédent.",
+          "values": [2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4]
+        },
+        {
+          "type": "note",
+          "content": "Note : attention de bien tricoter vos GSR ensemble comme une seule maille."
+        },
+        {
+          "type": "default",
+          "content": "Vous allez désormais tricoter en rond à nouveau en ne tricotant que des rgs endroits."
+        }
+      ]
     },
     {
-      "type": "changeNeedles",
-      "content": "Changer pour les plus grandes aiguilles."
+      "title": "Augmentations raglan",
+      "needlesSize": "4",
+      "instructions": [
+        {
+          "type": "default",
+          "content": "Rg 1 : * tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté ; répéter de * jusqu’à la fin du rg. (Vous finissez chaque rang d’augmentations avec 8 m supplémentaires.)",
+          "onlySizes": [80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, -1, -1, -1]
+        },
+        {
+          "type": "default",
+          "content": "Rg 2 : tric. à l’end.",
+          "onlySizes": [80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, -1, -1, -1]
+        },
+        {
+          "type": "default",
+          "content": "Répéter ces deux rgs jusqu’à avoir fait /// RAR au total depuis le tout début. Finir par un rg 2.",
+          "values": [23, 24, 25, 26, 27, 28, 30, 32, 33, 34, 35, 35, -1, -1, -1],
+          "onlySizes": [80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, -1, -1, -1]
+        },
+        {
+          "type": "default",
+          "content": "Rg 1 : * tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté ; répéter de * jusqu’à la fin du rg. (Vous finissez chaque rang d’augmentations avec 8 m supplémentaires.)",
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "Rg 2 : tric. jusqu'à 1m avant le M, AID, 1m end., gM, 2m end., gM, tric. jusqu'au M, gM, 2m. end., gM, 1m end., AIG, tric. jusqu'à 1m avant le M, AID, 1m end., gM, 2m end., gM, tric. jusqu'au M, gM, 2m end., gM, 1m end., AIG, tric. jusqu'à la fin du rang. (Vous finissez chaque rg 2 avec 4 mailles supplémentaires)",
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "Répéter ces deux rangs /// fois de plus.",
+          "values": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 3],
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "Rg suivant 1 : * tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté ; répéter de * jusqu’à la fin du rg.\nRg 2 : tric. à l’end.\nRépéter ces deux rgs jusqu’à avoir fait /// rgs d’augmentations raglan 1 (ceux avec les jetés) au total depuis le tout début. Finir par un rg 2.",
+          "values": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 35, 38, 40],
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "Augmentations devant et dos seulement\nRg suivant 1 : tric. jusqu'au M, AID, gM, 2m end., gM, tric. jusqu'au M, gM, 2m end., gM, AIG, tric. les m du devant, AID, gM, 2m end., gM, tric. jusqu'au M, gM, 2m end., gM, AIG, tric. la fin du rg.\nVous finissez chaque rang d’augmentations avec 4 m supplémentaires.",
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 130, 135, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "Rg 2 : tric. à l’end.\nRépéter ces deux rgs /// fois de plus.",
+          "values": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0, 2, 3, 1, 0],
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 130, 135, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "* Toutes les tailles\nVous avez désormais ///m sur vos aiguilles divisées de cette façon :",
+          "values": [270, 282, 300, 312, 326, 332, 354, 370, 378, 388, 404, 412, 424, 456, 476],
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 130, 135, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "///m pour le devant et le dos.",
+          "values": [77, 81, 86, 92, 97, 100, 105, 109, 113, 116, 122, 126, 132, 142, 148],
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 130, 135, 140, 150, 158]
+        },
+        {
+          "type": "default",
+          "content": "m pour chaque manche et 8 m raglan supplémentaires entre les M.",
+          "values": [54, 56, 60, 60, 62, 62, 68, 72, 72, 74, 76, 76, 76, 82, 86],
+          "onlySizes": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 130, 135, 140, 150, 158]
+        }
+      ]
     },
     {
-      "type": "default",
-      "content": "Rg de positionnement (end.) : tric. 1 rg à l’end. en plaçant les marqueurs de cette façon : /// end. pour le dos, pM, 2m end. pour le raglan, pM, /// end. pour la manche droite, pM, 2m end. pour le raglan, pM, /// end. pour le devant, pM, 2m end. pour le raglan, pM, /// end. pour la manche gauche, pM, 2m end. pour le raglan, pM, /// end. pour le dos.",
-      "values": [{
-        "key": "///",
-        "values": [
-          [16, 17, 18, 20, 22, 22, 22, 22, 23, 24, 25, 25, 25, 25, 25],
-          [8, 8, 10, 8, 8, 6, 8, 8, 6, 6, 6, 6, 6, 6, 6],
-          [31, 33, 36, 40, 43, 44, 45, 45, 47, 48, 50, 50, 50, 50, 50],
-          [8, 8, 10, 8, 8, 6, 8, 8, 6, 6, 6, 6, 6, 6, 6],
-          [15, 16, 18, 20, 21, 22, 23, 23, 24, 24, 25, 25, 25, 25, 25]
-        ],
-        "unity": "m"
-      }]
+      "title": "Séparation des manches et du corps",
+      "needlesSize": "4",
+      "instructions": [
+        {
+          "type": "waiting",
+          "content": "Vous allez désormais mettre les mailles des manches en attente et retirer les marqueurs des raglans comme ceci :"
+        },
+        {
+          "type": "default",
+          "content": "Rang de mise en attente : tric. à l'end. les mailles du dos, retirer le M, 1m end., mettre en attente 1m raglan, rM, mettre en attente ///m ",
+          "values": [54, 56, 60, 60, 62, 62, 68, 72, 72, 74, 76, 76, 76, 82, 86]
+        },
+        {
+          "type": "default",
+          "content": "pour la manche droite avec la maille précédente, rM, mettre en attente la maille raglan avec les autres, monter ///m pour l’emmanchure et pMDR, ",
+          "values": [3, 3, 3, 3, 3, 4, 4, 4, 5, 6, 6, 6, 7, 7, 8]
+        },
+        {
+          "type": "default",
+          "content": "monter ///m, ",
+          "values": [3, 3, 3, 3, 3, 4, 4, 4, 5, 6, 6, 6, 7, 8, 8]
+        },
+        {
+          "type": "default",
+          "content": ", tric. 1m end., rM, tric. ///m end. pour le devant, rM, 1m end., mettre 1m raglan en attente, rM,",
+          "values": [77, 81, 86, 92, 97, 100, 105, 109, 113, 116, 122, 126, 132, 142, 148]
+        },
+        {
+          "type": "default",
+          "content": "mettre en attente ///m pour la manche gauche avec la maille précédente,",
+          "values": [54, 56, 60, 60, 62, 62, 68, 72, 72, 74, 76, 76, 76, 82, 86]
+        },
+        {
+          "type": "default",
+          "content": "rM, mettre en attente la maille raglan avec les autres, monter ///m pour l’emmanchure, 1m end., rM, tric. à l'end. les mailles du dos jusqu’à l'ancien MDR, rM, tric. jusqu'au nouveau MDR.",
+          "values": [6, 6, 6, 6, 6, 8, 8, 8, 10, 12, 12, 12, 14, 15, 16]
+        },
+        {
+          "type": "note",
+          "content": "Note : le MDR est maintenant placé entre le dos et le devant, côté droit."
+        }
+      ]
     },
     {
-      "type": "note",
-      "content": "Note : le MDR se trouve au milieu du dos. Rangs raccourcis (german short rows) et augmentations raglan"
+      "title": "Corps",
+      "needlesSize": "4",
+      "instructions": [
+        {
+          "type": "default",
+          "content": "Vous avez désormais ///m sur vos aiguilles pour le corps.",
+          "values": [170, 178, 188, 200, 210, 220, 230, 238, 250, 260, 272, 280, 296, 314, 332]
+        },
+        {
+          "type": "default",
+          "content": "Continuer à tricoter le corps tout droit en jersey jusqu’à avoir 20cm de hauteur sous l’emmanchure."
+        },
+        {
+          "type": "default",
+          "content": "Tric. ///m end., pM de côté, tric. jusqu'à la fin du rg.",
+          "values": [85, 89, 94, 100, 105, 110, 115, 119, 125, 130, 136, 140, 148, 157, 166]
+        }
+      ]
     },
     {
-      "type": "default",
-      "content": "Pour cette partie, vous allez tricoter en aller- retour pour creuser l'encolure et faire en sorte que le dos soit plus haut que le devant. Glisser les M quand nécessaire."
+      "title": "Rangs raccourcis",
+      "needlesSize": "4",
+      "instructions": [
+        {
+          "type": "default",
+          "content": "1) tric. 6m end., tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "2) tric. à l'env. jusqu'au M de côté, gM, tric. 6m env., tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "3) tric. à l'end. jusqu'au MDR, gMDR, tric. 3m end., tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "4) tric. à l'env. jusqu'au M de côté, gM, tric. 3m env., tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "5) tric. à l'end jusqu'au MDR, tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "6) tric. à l'env jusqu'au M de côté, tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "7) tric. à l'end jusqu'à 3m avant le dernier GSR, tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "8) tric. à l'env jusqu'à 3m avant le dernier GSR, tourner le travail, faire un GSR"
+        },
+        {
+          "type": "default",
+          "content": "9) tric. jusqu'au MDR en tricotant les doubles mailles comme une seule"
+        },
+        {
+          "type": "default",
+          "content": "10) tric. un rang à l'end. en tricotant les doubles mailles comme une seule et retirer le M de côté."
+        }
+      ]
     },
     {
-      "type": "default",
-      "content": "Rg 1 (end.) : tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté, tric. à l’end. les mailles de la manche droite, 1 jeté, gM, 2m end., gM, 1 jeté, 2 m end., tourner le travail, GSR."
+      "title": "Fin du corps",
+      "needlesSize": "3.5",
+      "instructions": [
+        {
+          "type": "default",
+          "content": "Changer pour les plus petites aiguilles. Rg 1, 3, 5, 7 & 9 : tric. les m à l'env."
+        },
+        {
+          "type": "default",
+          "content": "Rg 2, 4, 6 & 8 : tric. les m à l'end."
+        },
+        {
+          "type": "default",
+          "content": "Rabattre les mailles sur le rg suivant (end.)"
+        }
+      ]
     },
     {
-      "type": "default",
-      "content": "Rg 2 (env.) : tric à l’envers jusqu’au MDR, tric. à l'env. jusqu'au prochain M, 1 jeté, gM, 2m env., gM, 1 jeté, tric. à l’env. les mailles de la manche gauche, 1 jeté, gM, 2m env., gM, 1 jeté, 2m env., tourner le travail, GSR."
+      "title": "Manches",
+      "needlesSize": "4",
+      "instructions": [
+        {
+          "type": "default",
+          "content": "Avec les plus grosses aiguilles, vous allez désormais reprendre vos mailles des manches mises en attente."
+        },
+        {
+          "type": "default",
+          "content": "Replacer sur vos aiguilles les 56, 58 (62, 62, 64, 64, 70)[74, 74, 76, 78, 78] 78, 84, 88m de la manche,"
+        },
+        {
+          "type": "default",
+          "content": "relever ///m à l’emmanchure,",
+          "values": [3, 3, 3, 3, 3, 4, 4, 4, 5, 6, 6, 6, 7, 7, 8]
+        },
+        {
+          "type": "default",
+          "content": "pMDR, relever ///m.",
+          "values": [3, 3, 3, 3, 3, 4, 4, 4, 5, 6, 6, 6, 7, 7, 8]
+        },
+        {
+          "type": "default",
+          "content": "Vous avez désormais ///m sur vos aiguilles.",
+          "values": [62, 64, 68, 68, 70, 72, 78, 82, 84, 88, 90, 90, 92, 98, 104]
+        },
+        {
+          "type": "default",
+          "content": "Tricoter en jersey en rond jusqu’à avoir 3 cm sous l’emmanchure."
+        },
+        {
+          "type": "default",
+          "content": "Rang de diminutions : 1m end., 2m ens-end., tric. jusqu’à 3m de la fin du rg, GGT, 1m end. (=2 diminutions)."
+        },
+        {
+          "type": "default",
+          "content": "Répéter ce rang de diminutions /// fois de plus ",
+          "values": [10, 10, 12, 11, 12, 12, 15, 16, 17, 18, 19, 19, 19, 22, 25]
+        },
+        {
+          "type": "default",
+          "content": "tous les /// cm.",
+          "values": [2.5, 2.5, 2, 2.5, 2, 2, 2, 2, 1.5, 1.5, 1.5, 1.5, 1.5, 1, 1]
+        },
+        {
+          "type": "default",
+          "content": "Vous avez désormais ///m sur vos aiguilles.",
+          "values": [40, 42, 42, 44, 44, 46, 46, 48, 48, 50, 50, 50, 52, 52, 52]
+        },
+        {
+          "type": "default",
+          "content": "Continuer en jersey jusqu’à ce que la manche mesure 34 cm ou 8cm de moins que la longueur désirée (la longueur standard totale de la manche dans le patron est de 42cm)."
+        }
+      ]
     },
     {
-      "type": "default",
-      "content": "Rg 3 (end.) : tric. à l’end. jusqu’au MDR."
-    },
-    {
-      "type": "default",
-      "content": "Faire ces 3 rgs 4 fois au total en faisant un GSR 2,2(2,2,3,3,3)[3,4,4,4,4]4,4,4m après le GSR précédent."
-    },
-    {
-      "type": "note",
-      "content": "Note : attention de bien tricoter vos GSR ensemble comme une seule maille."
-    },
-    {
-      "type": "default",
-      "content": "Vous allez désormais tricoter en rond à nouveau en ne tricotant que des rgs endroits."
-    },
-    {
-      "type": "default",
-      "content": "Augmentations raglan"
-    },
-    {
-      "type": "default",
-      "content": "* Tailles 80, 85 (90, 95, 100, 105, 110) [115, 120, 125, 130, 135] -, -, - cm seulement"
-    },
-    {
-      "type": "default",
-      "content": "Rg 1 : * tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté ; répéter de * jusqu’à la fin du rg. (Vous finissez chaque rang d’augmentations avec 8 m supplémentaires.)"
-    },
-    {
-      "type": "default",
-      "content": "Rg 2 : tric. à l’end."
-    },
-    {
-      "type": "default",
-      "content": "Répéter ces deux rgs jusqu’à avoir fait 23, 24 (25, 26, 27, 28, 30) [32, 33, 34, 35, 35] -, -, - RAR au total depuis le tout début. Finir par un rg 2."
-    },
-    {
-      "type": "default",
-      "content": "* Tailles -, - (-, -, -, -, -) [-, -, -, -, -] 140, 150, 158 cm seulement"
-    },
-    {
-      "type": "default",
-      "content": "Rg 1 : * tric. jusqu'au M, 1 jeté, gM, 2m end., gM, 1 jeté ; répéter de * jusqu’à la fin du rg. (Vous finissez chaque rang d’augmentations avec 8 m supplémentaires.)"
+      "title": "Fin des manches et finitions",
+      "needlesSize": "3.5",
+      "instructions": [
+        {
+          "type": "default",
+          "content": "Changer pour les plus petites aiguilles et tric. en point mousse de cette façon :"
+        },
+        {
+          "type": "default",
+          "content": "Rg 1 : tric. les m à l'env. Rg2: tric. les m àl'end. Répéter ces deux rangs pendant 8 cm en terminant par un rg 1."
+        },
+        {
+          "type": "default",
+          "content": "Rabattre les mailles souplement. Faire la même chose pour la deuxième manche."
+        },
+        {
+          "type": "default",
+          "content": "Rentrer les fils avec l’aiguille à laine. N’hésitez pas à fermer les trous sous les bras par quelques points au besoin. Bloquer le pull pour le mettre aux dimensions finales."
+        }
+      ]
     }
   ]
 }

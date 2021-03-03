@@ -8,13 +8,24 @@ interface InstructionProps {
 }
 
 function Instruction(props: InstructionProps) {
-  props.instruction.values && console.log(DisplaySizes(getCurrentSizes(props.instruction.values[0].values, props.currentSize)[0]))
+  let displayInstruction = true;
+  const valuesToDisplay = props.instruction.values
+    ? DisplaySizes(getCurrentSizes(props.instruction.values, props.currentSize))
+    : '';
 
-  return (
-    <div className="instructions">
-      {props.instruction.content}
-    </div>
-  );
+    if (props.currentSize !== -1 && props.instruction.onlySizes){
+      if (props.instruction.onlySizes[props.currentSize] === -1) {
+        displayInstruction = false;
+      }
+    }
+
+  return displayInstruction
+    ? (
+      <p className="instruction">
+        {props.instruction.content.replace('///', valuesToDisplay)}
+      </p>
+    )
+    : null;
 }
 
 export default Instruction;

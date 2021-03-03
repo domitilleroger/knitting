@@ -1,11 +1,9 @@
-export function getCurrentSizes(values: Array<Array<number>>, sizeSelected: number|null): Array<Array<number>> {
-  return values.map(vals => {
-    if (sizeSelected !== null) {
-      return [vals[sizeSelected]];
-    } else {
-      return vals;
-    }
-  });
+export function getCurrentSizes(values: Array<number>, sizeSelected: number): Array<number> {
+  if (sizeSelected !== -1) {
+    return [values[sizeSelected]];
+  } else {
+    return values;
+  }
 }
 
 function concatNumbersToString(params: Array<string>): any {
@@ -23,11 +21,15 @@ function concatSizeGroups(params:Array<string>) {
   return params.reduce(reducer);
 }
 
+function convertValueToStringArray(tab: Array<number>, params:Array<number>) {
+  return params.map(item => tab[item].toString());
+}
+
 function DisplayAllSizes(currentSizes: Array<number>) {
-  const first = concatNumbersToString([currentSizes[0].toString(), currentSizes[1].toString()]);
-  const second = concatNumbersToString([currentSizes[2].toString(), currentSizes[3].toString(), currentSizes[4].toString(), currentSizes[5].toString(),currentSizes[6].toString()]);
-  const third = concatNumbersToString([currentSizes[7].toString(), currentSizes[8].toString(), currentSizes[9].toString(), currentSizes[10].toString(),currentSizes[11].toString()]);
-  const fourth = concatNumbersToString([currentSizes[12].toString(), currentSizes[13].toString(), currentSizes[14].toString()]);
+  const first = concatNumbersToString(convertValueToStringArray(currentSizes, [0, 1]));
+  const second = concatNumbersToString(convertValueToStringArray(currentSizes, [2, 3, 4, 5, 6]));
+  const third = concatNumbersToString(convertValueToStringArray(currentSizes, [7, 8, 9, 10, 11]));
+  const fourth = concatNumbersToString(convertValueToStringArray(currentSizes, [12, 13, 14]));
 
   return concatSizeGroups([first, second, third, fourth]);
 }

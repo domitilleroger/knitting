@@ -2,8 +2,15 @@ export interface Pattern {
   id: string;
   name: string;
   author: string;
-  instructions: Array<IInstruction>;
+  sizes: Array<number>;
+  part: Array<IPart>;
 }
+
+export interface IPart {
+  title: string;
+  needlesSize: string;
+  instructions: Array<IInstruction>;
+};
 
 export enum InstructionTypes {
   default = "default",
@@ -14,17 +21,24 @@ export enum InstructionTypes {
   verif = "verif",
 };
 
-export interface IValues {
-  key: string;
-  values: Array<Array<number>>;
-  unity: string;
-};
-
 export interface IInstruction {
   order?: number;
   type: InstructionTypes|string;
   content: string;
-  values?: Array<IValues>;
+  values?: Array<number>;
+  onlySizes?: Array<number>;
+}
+
+function formatPart(part: IPart) {
+  return {
+    ...part,
+    instructions: part.instructions && part.instructions.map((instruction, index) => (
+      {
+        ...instruction,
+        order: index,
+      }
+    ))
+  }
 }
 
 export function formatJSON(jsonPattern: Pattern): Pattern {
@@ -32,11 +46,7 @@ export function formatJSON(jsonPattern: Pattern): Pattern {
     id: jsonPattern.id,
     name: jsonPattern.name,
     author: jsonPattern.author,
-    instructions: jsonPattern.instructions.map((instruction, index) => (
-      {
-        ...instruction,
-        order: index,
-      }
-    ))
+    sizes: jsonPattern.sizes,
+    part: jsonPattern.part.map(part => formatPart(part)),
   };
 }
