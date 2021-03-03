@@ -21,9 +21,9 @@ function Instruction(props: InstructionProps) {
 
   return displayInstruction
     ? (
-      <p className="instruction">
+      <span className="instruction instruction-{instruction.type}">
         {props.instruction.content.replace('///', valuesToDisplay)}
-      </p>
+      </span>
     )
     : null;
 }

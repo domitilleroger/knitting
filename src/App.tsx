@@ -3,7 +3,8 @@ import './App.css';
 import jsonPattern from "./patterns/trescao.json";
 import { formatJSON } from "./types/Pattern";
 
-import Instruction from "./components/instruction/Instruction";
+import Instruction from "./components/Instruction/Instruction";
+import Part from "./components/Part/Part";
 
 function App() {
   const [currentSize, setCurrentSize] = useState(-1);
@@ -28,20 +29,7 @@ function App() {
             <option key={size} value={size}>{size}</option>
           )}
         </select>
-        {
-          currentPattern.part.map((partt, index) =>
-            <div key={index}>
-              <h2>{partt.title} (<i>{partt.needlesSize}</i>)</h2>
-              {partt.instructions.map(instruction =>
-                <Instruction
-                  key={instruction.order}
-                  instruction={instruction}
-                  currentSize={currentSize}
-                />
-              )}
-          </div>
-          )
-        }
+        {currentPattern.part.map((part, index) => <Part key={index} part={part} currentSize={currentSize}/>)}
       </main>
     </div>
   );
