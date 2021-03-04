@@ -1,10 +1,26 @@
 import React from 'react';
-import { IInstruction } from '../../types/Pattern';
 import { getCurrentSizes, DisplaySizes } from "../../sizes/size";
 import './Instruction.scss';
 interface InstructionProps {
   currentSize: number;
   instruction: IInstruction;
+}
+
+enum InstructionTypes {
+  default = "default",
+  note = "note",
+  inline = "inline",
+  changeNeedles = "changeNeedles",
+  control = "control",
+  waiting = "waiting",
+};
+
+export interface IInstruction {
+  order?: number;
+  type: InstructionTypes|string;
+  content: string;
+  values?: Array<number>;
+  onlySizes?: Array<number>;
 }
 
 function Instruction(props: InstructionProps) {

@@ -420,5 +420,87 @@
         }
       ]
     }
+  ],
+  "abreviations": [
+    { "short": "m", "long": "maille" },
+    { "short": "rg", "long": "rang" },
+    { "short": "end.", "long": "endroit" },
+    { "short": "env.", "long": "envers" },
+    { "short": "M", "long": "marqueur" },
+    { "short": "pM", "long": "placer le marqueur" },
+    { "short": "gM", "long": "glisser le marqueur" },
+    { "short": "rM", "long": "retirer le marqueur" },
+    { "short": "MDR", "long": "marqueur de début de rang Tric : tricoter" }
+  ],
+  "techniques": [
+    {
+      "title": "Les augmentations",
+      "items": [
+        {
+          "name": "AID : augmentation inclinée vers la droite",
+          "explanation": "Avec la pointe de l’aiguille gauche, soulever le fil intercalaire de l’arrière vers l’avant. Tricoter cette maille en glissant l’aiguille droite sous le brin avant pour créer une torsion."
+        },
+        {
+          "name": "AIG : augmentation inclinée vers la gauche",
+          "explanation": "Avec la pointe de l’aiguille gauche, soulever le fil intercalaire en allant de l’avant vers l’arrière. Tricoter cette maille par le brin arrière."
+        }
+      ]
+    },
+    {
+      "title": "Les diminutions",
+      "items": [
+        {
+          "name": "2ens-end.",
+          "explanation": "Tricoter deux mailles ensemble à l’endroit."
+        },
+        {
+          "name": "GGT",
+          "explanation": "Glisser deux mailles l’une après l’autre comme pour les tricoter à l’endroit, puis les tricoter ensemble à l’endroit."
+        }
+      ]
+    },
+    {
+      "title": "Autres",
+      "items": [
+        {
+          "name": "Rang augmentation raglan",
+          "explanation": "Cette expression n’inclut que les rangs où sont réalisées les augmentations raglan. Par exemple, pour réaliser 10 rgs d'augmentations raglan, il faudra souvent tricoter 20 rgs au total."
+        },
+        {
+          "name": "Monter des mailles (long-tail cast-on)",
+          "explanation": "Cette technique permet un montage élastique. Attention de laisser environ 15 cm de longueur pour pouvoir rentrer les fils à la fin.",
+          "link": "https://youtu.be/-enVpM_IpJo"
+        },
+        {
+          "name": "Tricot en rond",
+          "explanation": "Tricoter en rond vous permet de ne pas avoir de couture à faire par la suite. Votre manche est tricotée comme un tube.",
+          "link": "https://youtu.be/gBOlg9ZUXgA"
+        },
+        {
+          "name": "Rangs raccourcis à l’allemande (German Short Rows)",
+          "link": "https://youtu.be/3rMeO0H-yLk"
+        },
+        {
+          "name": "RAR - Rang augmentation raglan",
+          "explanation": "Cette expression n’inclut que les rangs où sont réalisées les augmentations raglan. Par exemple, pour réaliser 10 rgs d'augmentations raglan, il faudra souvent tricoter 20 rgs au total."
+        },
+        {
+          "name": "Monter des mailles sous l’emmanchure",
+          "link": "https://youtu.be/bP69EdynoAE"
+        },
+        {
+          "name": "Relever des mailles sous l’emmanchure",
+          "link": "https://youtu.be/__51hMuO9TM"
+        },
+        {
+          "name": "Tricoter des manches en magic-loop",
+          "link": "https://youtu.be/gBOlg9ZUXgA"
+        },
+        {
+          "name": "Comment rentrer les fils",
+          "link": "https://youtu.be/PJIaeNFoquc"
+        }
+      ]
+    }
   ]
 }

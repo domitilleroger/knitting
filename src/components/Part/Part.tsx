@@ -1,7 +1,12 @@
 import React from 'react';
-import { IPart } from '../../types/Pattern';
-import Instruction from "../../components/Instruction/Instruction";
+import Instruction, { IInstruction } from "../../components/Instruction/Instruction";
 import './Part.scss';
+
+export interface IPart {
+  title: string;
+  needlesSize: string;
+  instructions: Array<IInstruction>;
+};
 
 interface PartProps {
   currentSize: number;
