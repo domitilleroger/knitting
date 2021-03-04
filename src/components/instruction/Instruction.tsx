@@ -1,7 +1,7 @@
 import React from 'react';
 import { IInstruction } from '../../types/Pattern';
 import { getCurrentSizes, DisplaySizes } from "../../sizes/size";
-
+import './Instruction.scss';
 interface InstructionProps {
   currentSize: number;
   instruction: IInstruction;
@@ -21,7 +21,7 @@ function Instruction(props: InstructionProps) {
 
   return displayInstruction
     ? (
-      <span className="instruction instruction-{instruction.type}">
+      <span className={`instruction instruction-${props.instruction.type}`}>
         {props.instruction.content.replace('///', valuesToDisplay)}
       </span>
     )

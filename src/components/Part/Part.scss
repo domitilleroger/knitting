@@ -1,0 +1,12 @@
+.part {
+  margin-top: 50px;
+  max-width: 600px;
+
+  &-title {
+    padding-left: 10px;
+
+    span {
+      float: right;
+    }
+  }
+}

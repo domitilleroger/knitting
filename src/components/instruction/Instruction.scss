@@ -1,0 +1,43 @@
+.instruction{
+  margin: 5px 0;
+  display: block;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: -25px;
+  }
+
+  &-inline {
+    display: inline;
+  }
+
+  &-waiting {
+    opacity: .5;
+  }
+
+  &-note {
+    font-style: italic;
+    font-weight: bold;
+    color: #A3C4BC;
+
+    &:before {
+      content: '📝';
+    }
+  }
+
+  &-changeNeedles {
+    font-weight: bold;
+    color: #BFD7B5;
+
+    &:before {
+      content: '🧶';
+    }
+  }
+
+  &-control {
+    &:before {
+      content: '🔍';
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import { IPart, IInstruction } from '../../types/Pattern';
-import { getCurrentSizes, DisplaySizes } from "../../sizes/size";
+import { IPart } from '../../types/Pattern';
 import Instruction from "../../components/Instruction/Instruction";
+import './Part.scss';
 
 interface PartProps {
   currentSize: number;
@@ -10,7 +10,7 @@ interface PartProps {
 
 function Part({ part, currentSize }: PartProps) {
   return <div className="part">
-    <h2>{part.title} (<i>{part.needlesSize}</i>)</h2>
+    <h2 className="part-title">{part.title} <span>{part.needlesSize}</span></h2>
     {part.instructions.map(instruction =>
       <Instruction
         key={instruction.order}

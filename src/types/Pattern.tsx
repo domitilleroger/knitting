@@ -2,6 +2,13 @@ export interface Pattern {
   id: string;
   name: string;
   author: string;
+  gauge: Array<number>;
+  recommendedEase: Array<number>;
+  yarn: {
+    category: string,
+    quantity: Array<number>
+  };
+  needles: Array<number>;
   sizes: Array<number>;
   part: Array<IPart>;
 }
@@ -43,10 +50,7 @@ function formatPart(part: IPart) {
 
 export function formatJSON(jsonPattern: Pattern): Pattern {
   return {
-    id: jsonPattern.id,
-    name: jsonPattern.name,
-    author: jsonPattern.author,
-    sizes: jsonPattern.sizes,
+    ...jsonPattern,
     part: jsonPattern.part.map(part => formatPart(part)),
   };
 }
