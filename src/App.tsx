@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import jsonPattern from "./patterns/trescao.json";
-import { formatJSON } from "./types/Pattern";
+import { formatJSON } from "./utils/Pattern";
 
 import Part from "./components/Part/Part";
 
@@ -19,8 +19,19 @@ const currentPattern = formatJSON(jsonPattern);
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="knittingApp">
+      <div className="pattern">
+        <div className="pattern-global">
+          <h2>Global</h2>
+        </div>
+        <div className="pattern-explanations">
+          <h2>explanations</h2>
+        </div>
+        <div className="pattern-instructions">
+          <h2>instructions</h2>
+        </div>
+      </div>
+      {/*<header className="App-header">
         <h1>{currentPattern.name}</h1>
       </header>
       <main>
@@ -34,7 +45,7 @@ const currentPattern = formatJSON(jsonPattern);
         <div className="pattern">
           {currentPattern.part.map((part, index) => <Part key={index} part={part} currentSize={currentSize}/>)}
         </div>
-      </main>
+      </main>*/}
     </div>
   );
 }
