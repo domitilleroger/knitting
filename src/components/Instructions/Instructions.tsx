@@ -24,7 +24,7 @@ function Instructions() {
       <select name="sizes" id="size-select" onChange={onChangeSelect}>
         <option value={-1}>All</option>
         {currentPattern.sizes.map(size =>
-          <option key={size} value={size} selected={size===currentSizeToDev}>{size}</option>
+          <option key={size} value={size} defaultValue={currentSizeToDev}>{size}</option>
         )}
       </select>
       <div className="part">
