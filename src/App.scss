@@ -36,7 +36,8 @@
 
   &-instructions {
     flex-basis: calc(100% - 10px);
-    width: calc(70% - 10px)
+    width: calc(70% - 10px);
+    overflow: auto;
   }
 }
 
