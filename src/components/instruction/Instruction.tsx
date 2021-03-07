@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCurrentSizes, DisplaySizes } from "../../utils/sizeUtils";
+import { getCurrentSizes, renderAllSizes } from "../../utils/sizeUtils";
 import './Instruction.scss';
 interface InstructionProps {
   currentSize: number;
@@ -26,7 +26,7 @@ export interface IInstruction {
 function Instruction(props: InstructionProps) {
   let displayInstruction = true;
   const valuesToDisplay = props.instruction.values
-    ? DisplaySizes(getCurrentSizes(props.instruction.values, props.currentSize))
+    ? renderAllSizes(getCurrentSizes(props.instruction.values, props.currentSize))
     : '';
 
     if (props.currentSize !== -1 && props.instruction.onlySizes){
