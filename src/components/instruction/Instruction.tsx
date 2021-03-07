@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCurrentSizes, DisplaySizes } from "../../sizes/size";
+import { getCurrentSizes, DisplaySizes } from "../../utils/size";
 import './Instruction.scss';
 interface InstructionProps {
   currentSize: number;
