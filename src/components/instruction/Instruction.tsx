@@ -6,7 +6,7 @@ interface InstructionProps {
   instruction: IInstruction;
 }
 
-enum InstructionTypes {
+export enum InstructionTypes {
   default = "default",
   note = "note",
   inline = "inline",

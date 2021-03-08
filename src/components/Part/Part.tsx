@@ -1,4 +1,6 @@
 import React from 'react';
+import shortid from 'shortid';
+
 import Instruction, { IInstruction } from "../../components/Instruction/Instruction";
 import './Part.scss';
 
@@ -18,7 +20,7 @@ function Part({ part, currentSize }: PartProps) {
     <h2 className="part-title">{part.title} <span>{part.needlesSize}</span></h2>
     {part.instructions.map(instruction =>
       <Instruction
-        key={instruction.order}
+        key={shortid.generate()}
         instruction={instruction}
         currentSize={currentSize}
       />
