@@ -47,7 +47,7 @@ export function renderSizeGroups(params:Array<string>) {
 }
 
 export function parseValueToStringArray(tab: Array<number>, params:Array<number>) {
-  return params.map(item => tab[item] ? tab[item].toString() : '');
+  return params.map(item => tab[item] ? tab[item].toString() : '-');
 }
 
 export function getSizeGroups(currentSizes: Array<number>) {
@@ -69,6 +69,6 @@ export function getSizeGroups(currentSizes: Array<number>) {
 
 export function renderAllSizes(currentSizes: Array<number>): any {
   return currentSizes.length === 1
-    ? currentSizes[0]
+    ? currentSizes[0].toString()
     : renderSizeGroups(getSizeGroups(currentSizes));
 }

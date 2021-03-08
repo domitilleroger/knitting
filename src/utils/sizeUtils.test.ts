@@ -55,12 +55,49 @@ it('should parse value to string array', () => {
     .toEqual(['115', '120', '125', '130', '135']);
   expect(parseValueToStringArray(values, [12, 13, 14]))
     .toEqual(['140', '145', '150']);
+
+  expect(parseValueToStringArray([], [0, 1]))
+    .toEqual(['-', '-'])
+  expect(parseValueToStringArray([], [2, 3, 4, 5, 6]))
+    .toEqual(['-', '-', '-', '-', '-']);
+  expect(parseValueToStringArray([], [7, 8, 9, 10, 11]))
+    .toEqual(['-', '-', '-', '-', '-']);
+  expect(parseValueToStringArray([], [12, 13, 14]))
+    .toEqual(['-', '-', '-']);
+
 })
 
 it('should getSizeGroups', () => {
-  /*TODO*/
+  const values = [ 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150 ];
+  expect(getSizeGroups([]))
+    .toEqual([
+      "-, -",
+      "-, -, -, -, -",
+      "-, -, -, -, -",
+      "-, -, -"
+    ]);
+  expect(getSizeGroups([80, 85]))
+    .toEqual([
+      "80, 85",
+      "-, -, -, -, -",
+      "-, -, -, -, -",
+      "-, -, -"
+    ]);
+  expect(getSizeGroups(values))
+    .toEqual([
+      "80, 85",
+      "90, 95, 100, 105, 110",
+      "115, 120, 125, 130, 135",
+      "140, 145, 150"
+    ]);
 })
 
 it('should renderAllSizes', () => {
-  /*TODO*/
+  const values = [ 80, 85, 90, 95, 100, 105, 110, 115, 120, 125, 130, 135, 140, 145, 150 ];
+  expect(renderAllSizes([]))
+    .toEqual('-, -, (-, -, -, -, -), [-, -, -, -, -], -, -, -');
+  expect(renderAllSizes([95]))
+      .toEqual('95');
+  expect(renderAllSizes(values))
+    .toEqual('80, 85, (90, 95, 100, 105, 110), [115, 120, 125, 130, 135], 140, 145, 150');
 })

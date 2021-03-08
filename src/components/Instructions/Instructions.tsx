@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../App.scss';
 import jsonPattern from "../../patterns/trescao.json";
-import { formatJSON } from "../../utils/Pattern";
+import { formatJSON } from "../../utils/patternUtils";
 
 import Part from "../../components/Part/Part";
 
