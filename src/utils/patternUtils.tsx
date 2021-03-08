@@ -15,7 +15,7 @@ export interface Pattern {
   part: Array<IPart>;
 }
 
-function formatPart(part: IPart) {
+export function formatPart(part: IPart) {
   return {
     ...part,
     instructions: part.instructions && part.instructions.map((instruction, index) => (
