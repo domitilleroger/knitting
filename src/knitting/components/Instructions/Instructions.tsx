@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import '../../App.scss';
-import jsonPattern from "../../patterns/trescao.json";
-import { formatJSON } from "../../utils/patternUtils";
 
-import Part from "../../components/Part/Part";
+import 'App.scss';
+import jsonPattern from "knitting/patterns/trescao.json";
+import { formatJSON } from "knitting/utils/patternUtils";
+
+import Part from "knitting/components/Part/Part";
 
 const defaultCurrentSize = -10;
 const currentSizeToDev = 105;

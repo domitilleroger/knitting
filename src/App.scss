@@ -1,46 +1,8 @@
-.knittingApp {
+.app {
   background-color: #F2E7C9;
   font-size: 12px;
   height: 100vh;
 }
-
-.pattern {
-  display: flex;
-  max-width: 1200px;
-  align-items: stretch;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 5px;
-
-  &-global,
-  &-explanations,
-  &-instructions {
-    color: #F2E7C9;
-    background-color: #413C58;
-    margin: 5px;
-    border-radius: 4px;
-  }
-
-  &-global {
-    flex-basis: calc(30% - 10px);
-    width: calc(30% - 10px);
-  }
-
-  &-explanations {
-    flex-basis: calc(70% - 10px);
-    width: calc(30% - 10px);
-  }
-
-  &-instructions {
-    flex-basis: calc(100% - 10px);
-    width: calc(70% - 10px);
-    overflow: auto;
-  }
-}
-
 
 /*
 Violet 413C58       fond

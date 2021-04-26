@@ -1,7 +1,7 @@
 import React from 'react';
 import shortid from 'shortid';
 
-import Instruction, { IInstruction } from "../../components/Instruction/Instruction";
+import Instruction, { IInstruction } from "knitting/components/Instruction/Instruction";
 import './Part.scss';
 
 export interface IPart {
@@ -25,7 +25,7 @@ function Part({ part, currentSize }: PartProps) {
         currentSize={currentSize}
       />
     )}
-</div>;
+  </div>;
 }
 
 export default Part;

@@ -1,22 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import routes from 'routes';
 import './App.scss';
-import Instructions from "./components/Instructions/Instructions";
+import Header from "common/components/Header/Header";
+import Pattern from "knitting/components/Pattern/Pattern";
+import Dashboard from "bujo/components/Dashboard/Dashboard";
 
 function App() {
   return (
-    <div className="knittingApp">
-      <div className="pattern">
-        <div className="pattern-global">
-          <h2>Global</h2>
-        </div>
-        <div className="pattern-explanations">
-          <h2>explanations</h2>
-        </div>
-        <div className="pattern-instructions">
-          <h2>instructions</h2>
-          <Instructions />
-        </div>
-      </div>
+    <div className="app">
+      <Header />
+      <Router>
+        <Switch>
+          <Route exact path={routes.knitting} component={Pattern}/>
+          <Route path={routes.bujo} component={Dashboard}/>
+        </Switch>
+      </Router>
     </div>
   );
 }

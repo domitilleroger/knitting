@@ -1,4 +1,4 @@
-import { IPart } from "../components/Part/Part";
+import { IPart } from "knitting/components/Part/Part";
 
 export interface Pattern {
   id: string;

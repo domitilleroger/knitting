@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCurrentSizes, renderAllSizes } from "../../utils/sizeUtils";
+import { getCurrentSizes, renderAllSizes } from "knitting/utils/sizeUtils";
 import './Instruction.scss';
 interface InstructionProps {
   currentSize: number;
@@ -29,11 +29,11 @@ function Instruction(props: InstructionProps) {
     ? renderAllSizes(getCurrentSizes(props.instruction.values, props.currentSize))
     : '';
 
-    if (props.currentSize !== -1 && props.instruction.onlySizes){
-      if (props.instruction.onlySizes[props.currentSize] === -1) {
-        displayInstruction = false;
-      }
+  if (props.currentSize !== -1 && props.instruction.onlySizes){
+    if (props.instruction.onlySizes[props.currentSize] === -1) {
+      displayInstruction = false;
     }
+  }
 
   return displayInstruction
     ? (

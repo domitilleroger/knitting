@@ -1,0 +1,14 @@
+.header {
+  background-color: white;
+  padding: 10px 0;
+
+  &__link {
+    margin: 0 10px;
+    color: #555555;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: #413C58;
+    }
+  }
+}
