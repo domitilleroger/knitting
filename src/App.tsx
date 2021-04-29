@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route exact path={routes.knitting} component={Pattern}/>
+          <Route path={routes.knitting} component={Dashboard}/>
           <Route path={routes.bujo} component={Dashboard}/>
         </Switch>
       </Router>

@@ -3,7 +3,7 @@ import React from 'react';
 import './Pattern.scss';
 import Instructions from "knitting/components/Instructions/Instructions";
 
-function App() {
+function Pattern() {
   return (
     <div className="pattern">
       <div className="pattern-global">
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Pattern;

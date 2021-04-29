@@ -63,6 +63,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
-    "@types/shortid": "^0.0.29"
+    "@types/shortid": "^0.0.29",
+    "react-hook-form": "^7.3.5"
   }
 }

@@ -1,6 +1,6 @@
 export enum Ecategories {
   body = 'body',
-  head = 'head',
+  mindset = 'mindset',
   material = 'material',
 }
 
